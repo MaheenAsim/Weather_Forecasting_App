@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minnesota Weather Updates</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>🌦️ Minnesota Weather Updates 🌦️</h1>
+    <div class="weather-widget">
+      <label for="city">🌇 Select a city:</label>
+      <select id="city">
+        <option value="Minneapolis">Minneapolis</option>
+        <option value="Saint Paul">Saint Paul</option>
+        <option value="Duluth">Duluth</option>
+        <option value="Rochester">Rochester</option>
+        <option value="Bloomington">Bloomington</option>
+      </select>
+      <button id="getWeather">Get Weather</button>
+      <div class="weather-info" id="weatherInfo">
+        <!-- Weather information will appear here -->
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
