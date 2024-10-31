@@ -1,0 +1,97 @@
+/* Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #87CEEB, #B0E0E6); /* Sky blue gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+  }
+  
+  /* Container Styling */
+  .container {
+    text-align: center;
+    color: #333;
+    position: relative;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #333;
+  }
+  
+  /* Flower Icons */
+  .container::before,
+  .container::after {
+    content: "🌸";
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .container::before {
+    left: -50px;
+  }
+  
+  .container::after {
+    right: -50px;
+  }
+  
+  .weather-widget {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    width: 100%;
+    margin: auto;
+  }
+  
+  label {
+    font-weight: 600;
+  }
+  
+  select, button {
+    margin: 10px 0;
+    font-size: 1rem;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  button {
+    background-color: #ff6f61;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #e85b52;
+  }
+  
+  .weather-info {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .weather-info h2 {
+    font-size: 1.8rem;
+  }
+  
+  .weather-info img {
+    width: 50px;
+    vertical-align: middle;
+  }
+  
